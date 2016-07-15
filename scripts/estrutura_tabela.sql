@@ -11,6 +11,7 @@ create table Tab_preco (
   data_importacao datetime
 );
 
+alter table Tab_preco add constraint pk_preco primary key(data_pregao, cod_ativo);
 
 create table Tab_hist_provento (
   cod_ativo char(5),
